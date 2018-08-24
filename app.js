@@ -28,7 +28,7 @@ if(!keyPath) {
 }
 
 // Load and instantiate the Dialogflow client library
-const { SessionsClient } = require('dialogflow');
+const { SessionsClient } = require('dialogflow').v2beta1;
 const dialogflowClient = new SessionsClient({
   keyFilename: keyPath
 })
